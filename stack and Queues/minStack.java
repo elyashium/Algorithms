@@ -91,4 +91,8 @@ public class minStack {
             return -1;  // Return -1 if stack is empty (could also throw an exception)
         }
     }
+
+
+
+    //approach 3 : optimised
 }
