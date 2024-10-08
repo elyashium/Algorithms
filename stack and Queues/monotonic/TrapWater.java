@@ -36,6 +36,8 @@ public class TrapWater {
     }
 
 
-    //2nd approch thrpigj staclk
+    //time complexity is 
+
+    //2nd approch through stack
 
 }
