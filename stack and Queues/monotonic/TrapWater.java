@@ -36,6 +36,6 @@ public class TrapWater {
     }
 
 
-    //2nd approch
+    //2nd approch thrpigj staclk
 
 }
