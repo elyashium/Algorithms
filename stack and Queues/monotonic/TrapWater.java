@@ -36,8 +36,12 @@ public class TrapWater {
     }
 
 
-    //time complexity is 
+    //time complexity is O(3N)
+// space complexity is O(2N) which can further be optimised 
 
+
+
+    
     //2nd approch through stack
 
 }
