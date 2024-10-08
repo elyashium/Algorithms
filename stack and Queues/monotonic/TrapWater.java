@@ -41,6 +41,7 @@ public class TrapWater {
 
 
 
+
     
     //2nd approch through stack
 
