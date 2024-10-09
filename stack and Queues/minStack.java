@@ -94,5 +94,6 @@ public class minStack {
 
 
 
-    //approach 3 : optimised
+    //approach 3 : optimised missing
+    //approach 2 stack of trapped water also missing
 }
