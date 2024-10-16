@@ -5,6 +5,7 @@ public class implementLL {
         int val;
         QueueNode next;
 
+        
         QueueNode(int data) {
             val = data;
             next = null;
