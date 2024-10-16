@@ -4,7 +4,6 @@ public class implementLL {
     class QueueNode {
         int val;
         QueueNode next;
-
         
         QueueNode(int data) {
             val = data;
