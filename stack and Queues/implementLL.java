@@ -146,5 +146,6 @@ public class implementLL {
         System.out.println("Queue size: " + q.size);  // Output: 2
         System.out.println("Queue Peek: " + q.Peek());  // Output: 20
     }
+    
 }
 
