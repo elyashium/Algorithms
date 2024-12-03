@@ -39,48 +39,50 @@ public class levelOrderTraversal {
      *     }
      * }
      */
+  
+          
+
+
+          //with using the queue data structure
+
+    /**
+     * Definition for a binary tree node.
+     * public class TreeNode {
+     *     int val;
+     *     TreeNode left;
+     *     TreeNode right;
+     *     TreeNode() {}
+     *     TreeNode(int val) { this.val = val; }
+     *     TreeNode(int val, TreeNode left, TreeNode right) {
+     *         this.val = val;
+     *         this.left = left;
+     *         this.right = right;
+     *     }
+     * }
+     */
     class Solution {
         public List<List<Integer>> levelOrder(TreeNode root) {
             List<List<Integer>> ans= new ArrayList<>();
+            Queue<TreeNode> queue = new List<TreeNode>();
 
             if(root==null){
                 return ans; // return empty list
             }
+            queue.offer(root);
+            while(!queue.isEmpty()){
+                int lvlNumber = queue.size();
+                List<Integer> sublist = new List<Integer>();
 
-            Queue<TreeNode> q = new LinkedList<>();
-            q.add(root);
-            q.add(null);
+                for (int i =0; i<lvlNumber; i++){
+                    if(queue.peek().left != null) queue.offer(queue.peek().left);
+                    if(queue.peek().right != null) queue.offer(queue.peek().right);
 
-            List<Integer> currentLevel = new ArrayList<>(); // to store the nodes of a particular level
-
-            while(!q.isEmpty()){
-                TreeNode currNode=q.remove();
-
-                if(currNode==null){
-                    // end of the current level
-                    ans.add(new ArrayList<>(currentLevel)); // add the current level to the result
-                    currentLevel.clear();
-
-                    if(q.isEmpty()){
-                        break;
-
-                    }
-                    else{
-                        q.add(null);
-                    }
+                    sublist.add(queue.poll().val)
                 }
-                else{
-                    // currNode!=null
-                    currentLevel.add(currNode.val);
-                    if(currNode.left!=null){
-                        q.add(currNode.left);
-                    }
-                    if(currNode.right!=null){
-                        q.add(currNode.right);
-                    }
-                }
+                ans.add(sublist);
             }
-            return ans;
+
+return ans;
 
 
         }
