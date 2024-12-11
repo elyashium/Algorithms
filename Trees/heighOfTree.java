@@ -22,5 +22,6 @@ class Solution {
         int rightHand = maxDepth(root.right);
 
         return 1 + Math.max(leftHand, rightHand);
+        
     }
 }
