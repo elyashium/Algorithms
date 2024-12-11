@@ -26,3 +26,7 @@ public class diameterBinaryTree {
         }
     }
 
+// res = Math.max(res, leftDepth + rightDepth); is used to keep track of the global diameter.
+// return 1 + Math.max(leftDepth, rightDepth); is used to provide the height of the current 
+// subtree for the recursive calls above.
+
