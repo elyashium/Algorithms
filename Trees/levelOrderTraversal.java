@@ -20,26 +20,6 @@ public class levelOrderTraversal {
         travel(level + 1, cur.right, ans);
     }
 
-
-
-    //with using the queue data structure
-
-    /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     *     int val;
-     *     TreeNode left;
-     *     TreeNode right;
-     *     TreeNode() {}
-     *     TreeNode(int val) { this.val = val; }
-     *     TreeNode(int val, TreeNode left, TreeNode right) {
-     *         this.val = val;
-     *         this.left = left;
-     *         this.right = right;
-     *     }
-     * }
-     */
-  
           
 
 
