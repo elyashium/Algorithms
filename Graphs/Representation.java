@@ -55,6 +55,30 @@ public class Representation {
 
         //Adjacency List Representation
 
+
+
+//        eg=>
+//        for like 4 edges the list would look like
+//                0 => {1,3, etc}
+//                1 and so on
+//                2
+//                3
+//                4
+
+        //for weighted graph, we store pairs in the list like (x,y)
+        //where x is the neigbour node and y is the weight of the graph.
+        //we take 1 as the default weight, if nothing is given.
+
+
+
+//        eg=>
+//        for like 4 edges the list would look like
+//                0 => {(1,3), (3,4) etc}
+//                1 and so on
+//                2
+//                3
+//                4
+
         Scanner sc = new Scanner(System.in);
 
 
@@ -66,7 +90,7 @@ public class Representation {
 
         ArrayList<ArrayList<Integer>> adjList = new ArrayList<>();
 
-      
+
         for (int i = 0; i < vertices; i++) {
             adjList.add(new ArrayList<>());
         }
