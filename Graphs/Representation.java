@@ -111,6 +111,7 @@ public class Representation {
                 System.out.print(neighbor + " ");
             }
             System.out.println();
+            
         }
 
     }
