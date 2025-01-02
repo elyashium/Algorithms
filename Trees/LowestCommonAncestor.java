@@ -21,6 +21,7 @@ public class LowestCommonAncestor {
             //current node and the current node again goes to the root and if left is null and current node is returned
             //is from right, from both these the right current node is returned as the ans and the recursion ends.
 
+                    
             else{
                 return root;
             }
