@@ -11,6 +11,7 @@ class Solution {
                 s = mid + 2;
             } else {
                 e = mid;
+                
             }
         }
         return nums[s];
