@@ -10,3 +10,5 @@ class Solution {
         return res;
     }
 }
+
+//optimal relies on heavy combinatorics and maths 
