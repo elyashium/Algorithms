@@ -1,3 +1,5 @@
+//not optimal the time complexity will be O(Min(Limit,N))
+
 class Solution {
     public long distributeCandies(int n, int limit) {
         long res = 0;
