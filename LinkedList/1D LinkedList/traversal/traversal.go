@@ -1,19 +1,16 @@
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
+type ListNode struct {
+    Val  int
+    Next *ListNode
+}
 
-func insertAtHead(head *ListNode, X int) *ListNode {
-	return &ListNode{Val: X, Next: head}
+func getLength(head *ListNode) int {
+    count := 0
+    temp := head
 
-	//this is how you intilaise a struct in go, it is equivalent to
+    for temp != nil {
+        count++
+        temp = temp.Next
+    }
 
-	/*
-	    var temp *ListNode          // declaration only
-	temp = &ListNode{Val: X}    // assigned later
-
-	*/
+    return count
 }
