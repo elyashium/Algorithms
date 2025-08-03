@@ -1,18 +1,23 @@
-/*Definiton of singly Linked List
 class ListNode {
-    constructor(val = 0, next = null) {
+    val: number;
+    next: ListNode | null;
+
+    constructor(val: number, next: ListNode | null = null) {
         this.val = val;
         this.next = next;
     }
 }
-*/
 
 class Solution {
-    insertAtHead(head, X) {
+    getLength(head: ListNode | null): number {
+        let count = 0;
+        let temp = head;
 
-        let temp = ListNode(X);
-        temp.next = head;
-        return temp;
+        while (temp !== null) {
+            count++;
+            temp = temp.next;
+        }
 
+        return count;
     }
 }
