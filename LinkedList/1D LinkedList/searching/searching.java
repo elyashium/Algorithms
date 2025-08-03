@@ -1,30 +1,18 @@
-/*Definition for singly Linked List
 class ListNode {
     int val;
     ListNode next;
-
-    ListNode() {
-        val = 0;
-        next = null;
-    }
-
-    ListNode(int data1) {
-        val = data1;
-        next = null;
-    }
-
-    ListNode(int data1, ListNode next1) {
-        val = data1;
-        next = next1;
-    }
+    ListNode(int val) { this.val = val; }
 }
-*/
 
 class Solution {
-    public ListNode insertAtHead(ListNode head, int X) {
-        ListNode temp = new ListNode(X);
-        temp.next = head;
-        return temp;
+    public boolean searchKey(ListNode head, int key) {
+        ListNode temp = head;
+        while (temp != null) {
+            if (temp.val == key) {
+                return true;
+            }
+            temp = temp.next;
+        }
+        return false;
     }
 }
-
