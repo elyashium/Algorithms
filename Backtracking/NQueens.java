@@ -62,6 +62,7 @@ public class NQueens {
                 return false;
             }
         }
+        
 
         return true;
     }
