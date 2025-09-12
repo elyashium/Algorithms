@@ -1,9 +1,11 @@
-class Solution {
-    public boolean rotate(String s, String goal) {
-        if (s.length() != goal.length()) {
-            return false;
-        }
-        String doubled = s + s;
-        return doubled.contains(goal);
+function rotate(s: string, goal: string): boolean {
+    if (s.length !== goal.length) {
+        return false;
     }
+    let doubled = s + s;
+    return doubled.includes(goal);
 }
+
+// Example usage
+console.log(rotate("abcde", "cdeab")); // true
+console.log(rotate("abcde", "abced")); // false
