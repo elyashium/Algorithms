@@ -6,6 +6,7 @@ class Solution:
             return False
 
         for cs, ct in zip(s, t):
+            #zip is used to aggregrate multiple iterators into one single iterator
             if cs in map_s:
                 if map_s[cs] != ct:
                     return False
