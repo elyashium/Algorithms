@@ -1,12 +1,46 @@
 class Solution {
-    public boolean isAnagram(String s, String t) {
-        char[] s1 = s.toCharArray();
-        char [] s2 = t.toCharArray();
+    public boolean isIsomorphic(String s, String t) {
 
-        Arrays.sort(s1);
-        Arrays.sort(s2);
+        HashMap<Character, Character> mapS = new HashMap<>();
+        HashMap<Character, Character> mapT = new HashMap<>();
 
-        return Arrays.equals(s1,s2);
+        int length = s.length();
 
+        if (length != t.length()) {
+            return false; 
+        }
+
+        
+
+        for(int i =0; i<length; i++){
+
+            char Sm = s.charAt(i);
+            char Tm = t.charAt(i);
+
+            //mapping s -> t
+
+            if(mapS.containsKey(Sm)){
+                if(mapS.get(Sm) != Tm){
+                    return false;
+                }
+            }
+            else{
+                mapS.put(Sm, Tm);
+            }
+
+
+            //mapping t -> s
+
+            if(mapT.containsKey(Tm)){
+                if(mapT.get(Tm) != Sm){
+                    return false;
+                }
+            }
+            else{
+                mapT.put(Tm, Sm);
+            }
+        }
+
+        return true;
     }
 }
