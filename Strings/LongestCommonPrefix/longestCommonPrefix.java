@@ -1,6 +1,6 @@
 class Solution {
     public String longestCommonPrefix(String[] strs) {
-        
+        Arrays.sort(strs);
         int count =0;
         String start = strs[0];
         String end = strs[strs.length()-1];
@@ -19,5 +19,3 @@ class Solution {
 
     }
 }
-
-explain to me how is this working and give code in other langauges too
