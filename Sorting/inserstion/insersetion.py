@@ -17,7 +17,14 @@ def main():
   
     print(f"Sorted Array: {numbers}")
 
-def inserstion_sort
+def inserstion_sort(nums: list[int])-> none:
+    n = len(nums)
+    
+    for i in range (n-1):
+        j = i 
+         while j > 0 and nums[j - 1] > nums[j]:
+            nums[j - 1], nums[j] = nums[j], nums[j - 1]
+            j -= 1
 
 # This is a standard Python construct to ensure main() runs only
 # when the script is executed directly.
