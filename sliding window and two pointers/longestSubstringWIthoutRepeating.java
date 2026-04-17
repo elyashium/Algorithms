@@ -19,6 +19,9 @@ public class LongestSubstringwithoutrepeating {
         // use Character, not String
         HashSet<Character> set = new HashSet<>();
 
+        //this makes the time complexity to be O(k) to make it more optimisied and under 
+        //question constraints we can use an array of freq
+
         for (int i = 0; i < n; i++) {
 
             // shrink window until no duplicate
